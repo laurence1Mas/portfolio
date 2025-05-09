@@ -41,6 +41,12 @@
     color: color-mix(in srgb, var(--accent-color), transparent 25%);
     text-decoration: none;
   }
+
+  .main{
+    width: 1200px;
+    top: 0;
+    left: 0;
+  }
   
 /* ==================================  header==================*/
   .header {
@@ -106,6 +112,10 @@
     transition: 0.3s;
   }
 
+  .header .social-links a:hover {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
   @media (min-width: 1200px) {
 
   .header~main,
@@ -152,16 +162,18 @@
   color: var(--nav-hover-color);
 }
 
+.navmenu a:hover .navicon,
+.navmenu .active .navicon,
+.navmenu .active:focus .navicon {
+  color: var(--accent-color);
+}
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
 section,
 .section {
   color: #ffffff;
-  background-color:#040b14;
-  overflow: clip;
-  width: 100%;
-  height: 100%;
 }
 
 .section-title {
@@ -202,14 +214,10 @@ section,
   display: flex;
   align-items: center;
   justify-content: left;
-  background-color:#040b14  ;
+  background-color:#040b14;
   height: 100%;
-  width: 100%;
   text-align: left;
   color: #ffffff;
-  top: 0;
-  left: 0;
-  bottom: 0;
 }
 
 .hero img {
@@ -254,4 +262,149 @@ section,
 .hero p span {
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent-color);
+}
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+/* ======================ABOUT SECTION============ */
+.about{
+  justify-content: center;
+  align-items: center;
+  background-color:#ffffff;
+  color:black;
+  padding: 0 20px;
+}
+.about .container .row{
+  display: flex;
+  padding: 10px;
+}
+.about .row .col-lg-8{
+  margin-left: 20px;
+}
+.about .container .row .row{
+  display: flex;
+  flex-direction: row;
+}
+.about .content{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.about .content .fst-italic{
+  font-style: italic;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}
+
+/* =====================STAK ============== */
+.stats .container .row{
+  display: flex;
+  padding: 0 20px;
+}
+.stats .stats-item {
+  padding: 30px;
+}
+
+.stats .stats-item i {
+  color: var(--accent-color);
+  display: block;
+  font-size: 50px;
+  float: left;
+  line-height: 0;
+}
+
+.stats .stats-item .purecounter {
+  color: var(--heading-color);
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  margin-left: 60px;
+}
+
+.stats .stats-item p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: var(--heading-font);
+  font-size: 14px;
+}
+
+/* ===========SKILLS====== */
+.skills{
+  color: black;
+  padding:  0 20px;
+  background-color: #f4fafd;
+}
+.skills .container .row .col-lg-6{
+  width: 100%;
+}
+.skills .row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+padding: 20px;
+}
+
+.skills .progress .skill {
+  color: var(--heading-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 80%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
 }
