@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
-<body class="index-page">
+<body>
     <header class="header">
         <div class="profile-img">
             <img src="assets/img/my-profile-img.jpg" alt="Profile Picture">
@@ -31,16 +31,18 @@
         </div>
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero"><i class="bi bi-house" style="margin-right: 10px;"></i> Home</a></li>
-                <li><a href="#about" class="active"><i class="bi bi-person navicon" style="margin-right: 10px;"></i>
+                <li><a href="#hero"><i class="bi bi-house" style="padding-right: 10px;"></i> Home</a></li>
+                <li><a href="#about" class="active"><i class="bi bi-person navicon" style="padding-right: 10px;"></i>
                         About</a></li>
-                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon" style="margin-right: 10px;"></i>
+                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon" style="padding-right: 10px;"></i>
                         Resume</a></li>
-                <li><a href="#portfolio"><i class="bi bi-images navicon" style="margin-right: 10px;"></i> Portfolio</a>
+                <li><a href="#portfolio"><i class="bi bi-images navicon" style="padding-right: 10px;"></i> Portfolio</a>
                 </li>
-                <li><a href="#services"><i class="bi bi-hdd-stack navicon" style="margin-right: 10px;"></i> Services</a>
+                <li><a href="#services"><i class="bi bi-hdd-stack navicon" style="padding-right: 10px;"></i> Services</a>
+                <li><a href="#testimonials"><i class="bi bi-chat-quote navicon" style="padding-right: 10px;"></i>
+ Testimonials</a>
                 </li>
-                <li><a href="#contact"><i class="bi bi-envelope navicon" style="margin-right: 10px;"></i> Contact</a>
+                <li><a href="#contact"><i class="bi bi-envelope navicon" style="padding-right: 10px;"></i> Contact</a>
                 </li>
             </ul>
         </nav>
@@ -48,8 +50,8 @@
 
     <main class="main">
         <!-- HERO SECTION -->
-        <section class="hero section" id="hero">
-            <img src="assets/img/hero-bg.jpg" alt="alt" class="aos-init" data-aos="fade-in">
+        <section class="hero" id="hero">
+            <img src="assets/img/hero-bg.jpg" alt="alt">
             <div class="container">
                 <h2>Laurence Mak</h2>
                 <p>
@@ -62,14 +64,14 @@
         <section id="about" class="about section">
 
             <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
+            <div class="container section-title" >
                 <h2>About</h2>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div><!-- End Section Title -->
 
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
 
                 <div class="row">
                     <div class="col-lg-4">
@@ -96,7 +98,7 @@
                                             USA</span></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-6" style="margin-left: 100px;">
+                            <div class="col-lg-6" style="padding-left: 100px;">
                                 <ul>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span>
@@ -241,7 +243,7 @@
 
         </section><!-- /Skills Section -->
 
-        <section id="resume" class="resume section">
+        <section id="resume" class="resume">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -330,10 +332,10 @@
 
         </section>
         <!-- Services Section -->
-        <section id="services" class="services section">
+        <section id="services" class="services">
 
             <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
+            <div class="container section-title">
                 <h2>Services</h2>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
@@ -344,7 +346,7 @@
 
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-4 col-md-6 service-item">
                         <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
                         <div>
                             <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
@@ -354,7 +356,7 @@
                     </div>
                     <!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 service-item">
                         <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
                         <div>
                             <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a>
@@ -364,7 +366,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-4 col-md-6 service-item">
                         <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
                         <div>
                             <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut
@@ -375,126 +377,225 @@
                     </div><!-- End Service Item -->
 
                 </div>
+            </div>
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-4col-md-6  service-item" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+
+                    <div class="col-lg-4 col-md-6 service-item">
+                        <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">Magni
-                                    Dolores</a>
+                            <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
+                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                excepturi sint occaecati cupiditate non provident</p>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item">
+                        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+                        <div>
+                            <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a>
                             </h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum</p>
+                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat tarad limino ata</p>
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+                    <div class="col-lg-4 col-md-6 service-item">
+                        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a>
-                            </h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque</p>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-                        <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-                        <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod
-                                    Tempor</a>
-                            </h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam
-                                libero
-                                tempore, cum soluta nobis est eligendi</p>
+                            <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut
+                                    perspiciatis</a></h4>
+                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur</p>
                         </div>
                     </div><!-- End Service Item -->
 
                 </div>
-            </div>
-
-        </section><!-- /Services Section -->
-        <section id="contact" class="contact section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Contact</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin: 30px;">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-5">
-
-                        <div class="info-wrap">
-                            <div class="info-item" data-aos="fade-up" data-aos-delay="200">
-                                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                                <div>
-                                    <h3>Address</h3>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
-                                </div>
-                            </div><!-- End Info Item -->
-
-                            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                                <i class="bi bi-telephone flex-shrink-0"></i>
-                                <div>
-                                    <h3>Call Us</h3>
-                                    <p>+1 5589 55488 55</p>
-                                </div>
-                            </div><!-- End Info Item -->
-
-                            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                                <i class="bi bi-envelope flex-shrink-0"></i>
-                                <div>
-                                    <h3>Email Us</h3>
-                                    <p>info@example.com</p>
-                                </div>
-                            </div><!-- End Info Item -->
-
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <form action="forms/contact.php" method="post" class="php-email-form custom-form"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <div class="row gy-4">
-                                <div class="col-md-6 form-group" style="margin-right: 5px;">
-                                    <input type="text" name="name" placeholder="Your name" id="name-field" class="form-control" required>
-                                </div>
-
-                                <div class="col-md-6 form-group" style="margin-left: 5px;">
-                                    <input type="email" class="form-control" placeholder="Your email adress" name="email" id="email-field" required>
-                                </div>
-                            </div>
-                            <div class="row gy-4" style="margin-top: 20px; padding: 10px;"></div>
-                            <div class="col-md-12 form-group full-width">
-                                <input type="text" class="form-control" style="width: 400px; margin-bottom: 20px;" name="subject"
-                                    id="subject-field" placeholder="your subject" required>
-                            </div>
-
-                            <div class="col-md-12 form-group full-width">
-                                <textarea class="form-control" name="message" style="width: 400px;" rows="10"
-                                    id="message-field" required placeholder="Your message"></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center submit-btn">
-                                <button type="submit">Send Message</button>
-                            </div>
-                    </div>
-                    </form>
-                </div>
-                <!-- End Contact Form -->
-
-            </div>
-
             </div>
 
         </section>
+        <section id="portfolio" class="portfolio section">
+  <div class="container section-title">
+    <h2>Portfolio</h2>
+    <p>Voici quelques-uns de mes travaux récents dans le domaine du développement et du design web.</p>
+  </div>
+
+  <div class="container portfolio-grid">
+    <div class="portfolio-item">
+      <img src="assets/img/portofolio/app-1.jpg" alt="Projet 1">
+      <div class="overlay">
+        <h4>Projet 1</h4>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="assets/img/portofolio/app-2.jpg" alt="Projet 2">
+      <div class="overlay">
+        <h4>Projet 2</h4>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="assets/img/portofolio/app-3.jpg" alt="Projet 3">
+      <div class="overlay">
+        <h4>Projet 3</h4>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="assets/img/portofolio/books-1.jpg" alt="Projet 4">
+      <div class="overlay">
+        <h4>Projet 4</h4>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="assets/img/portofolio/books-2.jpg" alt="Projet 5">
+      <div class="overlay">
+        <h4>Projet 5</h4>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="assets/img/portofolio/books-3.jpg" alt="Projet 6">
+      <div class="overlay">
+        <h4>Projet 6</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials section">
+  <div class="container section-title">
+    <h2>Testimonials</h2>
+    <p>Ce que disent mes clients et collaborateurs à propos de mon travail.</p>
+  </div>
+
+  <div class="container testimonials-grid">
+
+    <div class="testimonial-card">
+      <div class="testimonial-content">
+        <p>“Un développeur brillant avec un vrai sens du design. Travailler avec lui a été un plaisir.”</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="assets/img/portofolio/branding-1.jpg" alt="Client 1">
+        <div>
+          <h4>Jean Mbala</h4>
+          <span>CEO, TechPlus</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-content">
+        <p>“Toujours à l’écoute et très professionnel. Résultats toujours à la hauteur de mes attentes.”</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="assets/img/portofolio/branding-2.jpg" alt="Client 2">
+        <div>
+          <h4>Aïcha Diallo</h4>
+          <span>UX Designer, Freelance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-content">
+        <p>“Son implication et sa créativité ont fait toute la différence dans notre projet.”</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="assets/img/portofolio/branding-3.jpg" alt="Client 3">
+        <div>
+          <h4>David Nsimba</h4>
+          <span>Chef de projet, VisionCorp</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+        <!-- /Services Section -->
+        <section id="contact" class="contact">
+
+    <!-- Section Title -->
+    <div class="container section-title">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row" style="gap: 20px; flex-wrap: wrap;">
+
+            <div class="col-lg-5" style="flex: 1 1 300px;">
+
+                <div class="info-wrap">
+                    <div class="info-item">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@example.com</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                        frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-7" style="flex: 1 1 300px;">
+                <form action="forms/contact.php" method="post" class="php-email-form custom-form">
+
+                    <div class="row" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <input type="text" name="name" placeholder="Your name" id="name-field" class="form-control"
+                            required style="flex: 1 1 200px; max-width: 100%;">
+                        <input type="email" name="email" placeholder="Your email address" id="email-field"
+                            class="form-control" required style="flex: 1 1 200px; max-width: 100%;">
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <input type="text" name="subject" id="subject-field" class="form-control"
+                            placeholder="Your subject" required style="width: 100%; max-width: 100%;">
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <textarea name="message" id="message-field" rows="10" class="form-control"
+                            placeholder="Your message" required style="width: 100%; max-width: 100%;"></textarea>
+                    </div>
+
+                    <div class="submit-btn" style="margin-top: 20px; text-align: center;">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div><!-- End .row -->
+
+    </div><!-- End .container -->
+
+</section>
+
     </main>
 </body>
 
