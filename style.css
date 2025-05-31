@@ -172,6 +172,9 @@ section {
   width: 100%;
   text-decoration: none;
 }
+.navmenu li i{
+  padding-right: 10px;
+}
 
 .navmenu a:hover,
 .navmenu .active,
@@ -390,6 +393,7 @@ section {
 }
 
 /* ===========SKILLS====== */
+
 .skills {
   color: black;
   padding: 0 20px;
@@ -440,6 +444,34 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+  .skills .row {
+    flex-direction: column;
+  }
+
+  .skills .container .row .col-lg-6 {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .skills .progress {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills .progress .skill {
+    font-size: 14px;
+  }
+
+  .skills .progress .skill .val {
+    float: none;
+    display: block;
+    text-align: right;
+    margin-top: 4px;
+  }
 }
 
 /* =============resume=================== */
@@ -528,7 +560,7 @@ section {
 
 .services .service-item {
   position: relative;
-    justify-content: left;
+  justify-content: left;
   text-align: left;
   align-items: flex-start;
   padding: 20px;
@@ -579,6 +611,40 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+@media (max-width: 992px) {
+  .services .container .row {
+    flex-direction: column;
+  }
+
+  .services .service-item {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .services .service-item .icon {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services .service-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .services .service-item .icon {
+    margin: 0 0 10px 0;
+  }
+
+  .services .service-item .title,
+  .services .service-item .description {
+    text-align: center;
+  }
+}
 
 /* ===========contact ============== */
 
@@ -591,7 +657,6 @@ section {
   display: flex;
 
 }
-
 
 .contact .info-wrap {
   background-color: var(--surface-color);
